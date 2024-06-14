@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+.main {
+    background-image: url("Assets/background.png");
+   height: 90vh;
+    position: relative;
+}
+
+.box {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.55;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(100vw, 1200px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+
+}
+
+.logo {
+    padding: 20px;
+    width: 120px;
+
+}
+.hero{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    
+    font-family: "Martel Sans", sans-serif;
+    gap: 23px;
+    
+}
+.hero> :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.seperation{
+    height: 6px;
+    background-color: rgba(46,44,44);
+}
+.btn{
+    color: white;
+    background-color: red;
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+.language{
+    background-color: rgba(22, 22, 22, 0.7);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.btn-getstarted{
+    height: 40px;
+}
+.email{
+    padding: 5px 20px;
+    border-radius: 4px;
+    background-color: rgba(22, 22, 22, 0.7);
+    color: white;
+    width: 220px;
+    border: rgba(246, 222, 222, 0.356) 1px solid ;
+    margin-right: 4px;
+    height: 40px;
+}
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+.stranger-things{
+    
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+.main-div{
+    width: 30vh;
+    border: 2px solid white;
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    bottom: 90px;
+    left: 25px;
+    z-index: 15;
+}
+.Download{
+    color: rgb(28, 138, 235);
+    font-size: 20px;
+}
+.faq{
+    margin-bottom: 45px;
+    padding: 34px;
+}
+.faq h2{
+    text-align: center;
+    color: white;
+    font-size: 48px;
+
+}
+/* .faqbox{
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px ;
+    margin: auto;
+    min-width:42vh;
+    cursor: pointer;
+    margin: 8px ;
+} */
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+    padding: 24px;
+    max-width: 60vw;
+    margin: 14px auto;
+    cursor: pointer;
+}
+.faqbox:hover{
+    background-color: #414141;
+    transition: ease-in .5s ;
+}
+.faqbox span{
+    color: white;
+    font-size: 24px;
+}
+.faqbox img{
+    width: 24px;
+}
+
+@media screen and (max-width:1300px ){
+    .first{
+        flex-wrap: wrap;
+    }
+}
+
+footer {
+    /* max-width: 90vw; */
+    padding: 5px 0;
+}
+
+.footer-item{
+    align-items: center;
+}
+
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+footer .questionss {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+}
+
+
+.footer a {
+font-size: 14px;
+color: white;
+}
+
+.footer-item {
+display: flex;
+flex-direction: column;
+gap: 23px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 100vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
